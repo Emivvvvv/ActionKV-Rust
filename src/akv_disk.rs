@@ -4,21 +4,21 @@ use std::collections::HashMap;
 
 #[cfg(target_os = "windows")]
 const USAGE: &str = "\n
-Usage:\n
-    akv_disk.exe <FILE> get <KEY>\n
-    akv_disk.exe <FILE> delete <KEY> <VALUE>\n
-    akv_disk.exe <FILE> insert <KEY> <VALUE>\n
-    akv_disk.exe <FILE> update <KEY> <VALUE>\n
-";
+Usage:
+    akv_disk.exe <FILE> get <KEY>
+    akv_disk.exe <FILE> delete <KEY> <VALUE>
+    akv_disk.exe <FILE> insert <KEY> <VALUE>
+    akv_disk.exe <FILE> update <KEY> <VALUE>
+\n";
 
 #[cfg(not(target_os = "windows"))]
 const USAGE: &str = "\n
-Usage:\n
-    akv_disk <FILE> get <KEY>\n
-    akv_disk <FILE> delete <KEY> <VALUE>\n
-    akv_disk <FILE> insert <KEY> <VALUE>\n
-    akv_disk <FILE> update <KEY> <VALUE>\n
-";
+Usage:
+    akv_disk <FILE> get <KEY>
+    akv_disk <FILE> delete <KEY> <VALUE>
+    akv_disk <FILE> insert <KEY> <VALUE>
+    akv_disk <FILE> update <KEY> <VALUE>
+\n";
 
 type ByteStr = [u8];
 type ByteString = Vec<u8>;
